@@ -1,0 +1,14 @@
+D:\Visual Studio\FPPKK\FPPKK\obj\Debug\FPPKK.vbproj.AssemblyReference.cache
+D:\Visual Studio\FPPKK\FPPKK\obj\Debug\FPPKK.MenuLogin.resources
+D:\Visual Studio\FPPKK\FPPKK\obj\Debug\FPPKK.LoginBendahara.resources
+D:\Visual Studio\FPPKK\FPPKK\obj\Debug\FPPKK.MenuSimpanan.resources
+D:\Visual Studio\FPPKK\FPPKK\obj\Debug\FPPKK.Resources.resources
+D:\Visual Studio\FPPKK\FPPKK\obj\Debug\FPPKK.vbproj.GenerateResource.cache
+D:\Visual Studio\FPPKK\FPPKK\obj\Debug\FPPKK.vbproj.CoreCompileInputs.cache
+D:\Visual Studio\FPPKK\FPPKK\bin\Debug\FPPKK.exe.config
+D:\Visual Studio\FPPKK\FPPKK\bin\Debug\FPPKK.exe
+D:\Visual Studio\FPPKK\FPPKK\bin\Debug\FPPKK.pdb
+D:\Visual Studio\FPPKK\FPPKK\bin\Debug\FPPKK.xml
+D:\Visual Studio\FPPKK\FPPKK\obj\Debug\FPPKK.exe
+D:\Visual Studio\FPPKK\FPPKK\obj\Debug\FPPKK.xml
+D:\Visual Studio\FPPKK\FPPKK\obj\Debug\FPPKK.pdb
