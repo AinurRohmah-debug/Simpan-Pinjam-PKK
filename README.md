@@ -1,2 +1,2 @@
 # Simpan-Pinjam-PKK
-Java desktop application for managing PKK savings and loan transactions, including member data, savings, loans, installments, and reports.
+Desktop-based Savings and Loan Management System developed using Visual Basic .NET, featuring member management, savings, loans, installment tracking, and financial reporting.
