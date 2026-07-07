@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Pinjaman" targetNamespace="http://tempuri.org/DS_Pinjaman.xsd" xmlns:mstns="http://tempuri.org/DS_Pinjaman.xsd" xmlns="http://tempuri.org/DS_Pinjaman.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Pinjaman" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DS_Pinjaman" msprop:Generator_DataSetName="DS_Pinjaman">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="nota_pinjaman" msprop:Generator_RowEvHandlerName="nota_pinjamanRowChangeEventHandler" msprop:Generator_RowDeletedName="nota_pinjamanRowDeleted" msprop:Generator_RowDeletingName="nota_pinjamanRowDeleting" msprop:Generator_RowEvArgName="nota_pinjamanRowChangeEvent" msprop:Generator_TablePropName="nota_pinjaman" msprop:Generator_RowChangedName="nota_pinjamanRowChanged" msprop:Generator_RowChangingName="nota_pinjamanRowChanging" msprop:Generator_TableClassName="nota_pinjamanDataTable" msprop:Generator_RowClassName="nota_pinjamanRow" msprop:Generator_TableVarName="tablenota_pinjaman" msprop:Generator_UserTableName="nota_pinjaman">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_simpanpinjam" msprop:Generator_ColumnPropNameInRow="id_simpanpinjam" msprop:Generator_ColumnPropNameInTable="id_simpanpinjamColumn" msprop:Generator_ColumnVarNameInTable="columnid_simpanpinjam" msprop:Generator_UserColumnName="id_simpanpinjam" type="xs:string" minOccurs="0" />
+              <xs:element name="id_anggota" msprop:Generator_ColumnPropNameInRow="id_anggota" msprop:Generator_ColumnPropNameInTable="id_anggotaColumn" msprop:Generator_ColumnVarNameInTable="columnid_anggota" msprop:Generator_UserColumnName="id_anggota" type="xs:int" minOccurs="0" />
+              <xs:element name="nominal_pinjam" msprop:Generator_ColumnPropNameInRow="nominal_pinjam" msprop:Generator_ColumnPropNameInTable="nominal_pinjamColumn" msprop:Generator_ColumnVarNameInTable="columnnominal_pinjam" msprop:Generator_UserColumnName="nominal_pinjam" type="xs:int" minOccurs="0" />
+              <xs:element name="cicilan_per_bulan" msprop:Generator_ColumnPropNameInRow="cicilan_per_bulan" msprop:Generator_ColumnPropNameInTable="cicilan_per_bulanColumn" msprop:Generator_ColumnVarNameInTable="columncicilan_per_bulan" msprop:Generator_UserColumnName="cicilan_per_bulan" type="xs:int" minOccurs="0" />
+              <xs:element name="tanggal_pinjam" msprop:Generator_ColumnPropNameInRow="tanggal_pinjam" msprop:Generator_ColumnPropNameInTable="tanggal_pinjamColumn" msprop:Generator_ColumnVarNameInTable="columntanggal_pinjam" msprop:Generator_UserColumnName="tanggal_pinjam" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

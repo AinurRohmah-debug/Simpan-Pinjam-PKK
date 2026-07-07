@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85993FD5-E142-4A2A-9E65-E29B1181710C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FPPKK.My.MyApplication</StartupObject>
+    <RootNamespace>FPPKK</RootNamespace>
+    <AssemblyName>FPPKK</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FPPKK.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FPPKK.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>FPPKK.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>FPPKK.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Angsuran.Designer.vb">
+      <DependentUpon>Angsuran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Angsuran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR_angsuran.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_angsuran.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR_notasukarela.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_notasukarela.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR_NotaWajib.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_NotaWajib.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR_pinjaman.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_pinjaman.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Angsuran.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Angsuran.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_NotaWajib.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_NotaWajib.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Pinjaman.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Pinjaman.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_SimpSukarela.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SimpSukarela.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_SimpSukarela.vb">
+      <DependentUpon>DS_SimpSukarela.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form_notaangsuran.Designer.vb">
+      <DependentUpon>Form_notaangsuran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_notaangsuran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_notapinjaman.Designer.vb">
+      <DependentUpon>Form_notapinjaman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_notapinjaman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanAnggota.Designer.vb">
+      <DependentUpon>LaporanAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuLaporanBendahara.Designer.vb">
+      <DependentUpon>MenuLaporanBendahara.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuLaporanBendahara.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuLogin.Designer.vb">
+      <DependentUpon>MenuLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAnggota.Designer.vb">
+      <DependentUpon>MenuAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaporanAnggota.Designer.vb">
+      <DependentUpon>FormLaporanAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLaporanAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginBendahara.Designer.vb">
+      <DependentUpon>LoginBendahara.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginBendahara.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPengawas.Designer.vb">
+      <DependentUpon>MenuPengawas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPengawas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuSimpanan.Designer.vb">
+      <DependentUpon>MenuSimpanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuSimpanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nota_Sukarela.Designer.vb">
+      <DependentUpon>Nota_Sukarela.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Nota_Sukarela.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimpananWajib.Designer.vb">
+      <DependentUpon>SimpananWajib.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SimpananWajib.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimpananSukarela.Designer.vb">
+      <DependentUpon>SimpananSukarela.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SimpananSukarela.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPengawas.Designer.vb">
+      <DependentUpon>LoginPengawas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPengawas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanKeuangan.Designer.vb">
+      <DependentUpon>LaporanKeuangan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanKeuangan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StrukSimpanWajib.Designer.vb">
+      <DependentUpon>StrukSimpanWajib.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StrukSimpanWajib.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahAnggota.Designer.vb">
+      <DependentUpon>TambahAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TambahAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginAnggota.Designer.vb">
+      <DependentUpon>LoginAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanGabungan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LaporanGabungan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ModuleKoneksi.vb" />
+    <Compile Include="GlobalVar.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SimpanPinjam.Designer.vb">
+      <DependentUpon>SimpanPinjam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SimpanPinjam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Angsuran.resx">
+      <DependentUpon>Angsuran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_angsuran.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_angsuran.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_notasukarela.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_notasukarela.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_NotaWajib.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_NotaWajib.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_pinjaman.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_pinjaman.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_notaangsuran.resx">
+      <DependentUpon>Form_notaangsuran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_notapinjaman.resx">
+      <DependentUpon>Form_notapinjaman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanAnggota.resx">
+      <DependentUpon>LaporanAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuLaporanBendahara.resx">
+      <DependentUpon>MenuLaporanBendahara.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuLogin.resx">
+      <DependentUpon>MenuLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAnggota.resx">
+      <DependentUpon>MenuAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLaporanAnggota.resx">
+      <DependentUpon>FormLaporanAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginBendahara.resx">
+      <DependentUpon>LoginBendahara.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPengawas.resx">
+      <DependentUpon>MenuPengawas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSimpanan.resx">
+      <DependentUpon>MenuSimpanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nota_Sukarela.resx">
+      <DependentUpon>Nota_Sukarela.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimpananWajib.resx">
+      <DependentUpon>SimpananWajib.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimpananSukarela.resx">
+      <DependentUpon>SimpananSukarela.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPengawas.resx">
+      <DependentUpon>LoginPengawas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanKeuangan.resx">
+      <DependentUpon>LaporanKeuangan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StrukSimpanWajib.resx">
+      <DependentUpon>StrukSimpanWajib.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahAnggota.resx">
+      <DependentUpon>TambahAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAnggota.resx">
+      <DependentUpon>LoginAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanGabungan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LaporanGabungan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimpanPinjam.resx">
+      <DependentUpon>SimpanPinjam.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DS_Angsuran.xsc">
+      <DependentUpon>DS_Angsuran.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Angsuran.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Angsuran.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DS_Angsuran.xss">
+      <DependentUpon>DS_Angsuran.xsd</DependentUpon>
+    </None>
+    <None Include="DS_NotaWajib.xsc">
+      <DependentUpon>DS_NotaWajib.xsd</DependentUpon>
+    </None>
+    <None Include="DS_NotaWajib.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_NotaWajib.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DS_NotaWajib.xss">
+      <DependentUpon>DS_NotaWajib.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Pinjaman.xsc">
+      <DependentUpon>DS_Pinjaman.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Pinjaman.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Pinjaman.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DS_Pinjaman.xss">
+      <DependentUpon>DS_Pinjaman.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SimpSukarela.xsc">
+      <DependentUpon>DS_SimpSukarela.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SimpSukarela.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SimpSukarela.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DS_SimpSukarela.xss">
+      <DependentUpon>DS_SimpSukarela.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-11-07 at 21.25.45_70eb7b7c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO_PKK_PNG.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

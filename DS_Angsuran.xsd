@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Angsuran" targetNamespace="http://tempuri.org/DS_Angsuran.xsd" xmlns:mstns="http://tempuri.org/DS_Angsuran.xsd" xmlns="http://tempuri.org/DS_Angsuran.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Angsuran" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DS_Angsuran" msprop:Generator_DataSetName="DS_Angsuran">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="nota_angsuran" msprop:Generator_RowEvHandlerName="nota_angsuranRowChangeEventHandler" msprop:Generator_RowDeletedName="nota_angsuranRowDeleted" msprop:Generator_RowDeletingName="nota_angsuranRowDeleting" msprop:Generator_RowEvArgName="nota_angsuranRowChangeEvent" msprop:Generator_TablePropName="nota_angsuran" msprop:Generator_RowChangedName="nota_angsuranRowChanged" msprop:Generator_RowChangingName="nota_angsuranRowChanging" msprop:Generator_TableClassName="nota_angsuranDataTable" msprop:Generator_RowClassName="nota_angsuranRow" msprop:Generator_TableVarName="tablenota_angsuran" msprop:Generator_UserTableName="nota_angsuran">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_angsuran" msprop:Generator_ColumnPropNameInRow="id_angsuran" msprop:Generator_ColumnPropNameInTable="id_angsuranColumn" msprop:Generator_ColumnVarNameInTable="columnid_angsuran" msprop:Generator_UserColumnName="id_angsuran" type="xs:int" minOccurs="0" />
+              <xs:element name="id_simpanpinjam" msprop:Generator_ColumnPropNameInRow="id_simpanpinjam" msprop:Generator_ColumnPropNameInTable="id_simpanpinjamColumn" msprop:Generator_ColumnVarNameInTable="columnid_simpanpinjam" msprop:Generator_UserColumnName="id_simpanpinjam" type="xs:string" minOccurs="0" />
+              <xs:element name="tanggal_angsuran" msprop:Generator_ColumnPropNameInRow="tanggal_angsuran" msprop:Generator_ColumnPropNameInTable="tanggal_angsuranColumn" msprop:Generator_ColumnVarNameInTable="columntanggal_angsuran" msprop:Generator_UserColumnName="tanggal_angsuran" type="xs:string" minOccurs="0" />
+              <xs:element name="nominal_angsuran" msprop:Generator_ColumnPropNameInRow="nominal_angsuran" msprop:Generator_ColumnPropNameInTable="nominal_angsuranColumn" msprop:Generator_ColumnVarNameInTable="columnnominal_angsuran" msprop:Generator_UserColumnName="nominal_angsuran" type="xs:int" minOccurs="0" />
+              <xs:element name="cicilan_ke" msprop:Generator_ColumnPropNameInRow="cicilan_ke" msprop:Generator_ColumnPropNameInTable="cicilan_keColumn" msprop:Generator_ColumnVarNameInTable="columncicilan_ke" msprop:Generator_UserColumnName="cicilan_ke" type="xs:int" minOccurs="0" />
+              <xs:element name="isa_setelah_bayar" msprop:Generator_ColumnPropNameInRow="isa_setelah_bayar" msprop:Generator_ColumnPropNameInTable="isa_setelah_bayarColumn" msprop:Generator_ColumnVarNameInTable="columnisa_setelah_bayar" msprop:Generator_UserColumnName="isa_setelah_bayar" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
